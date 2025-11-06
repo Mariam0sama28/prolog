@@ -1,0 +1,23 @@
+{
+  "user": {
+    "name": "Mariem",
+    "week_start": "Sunday"
+  },
+  "tasks": [
+    {
+      "name": "Study AI Concepts",
+      "priority": 5,
+      "duration": 2
+    },
+    {
+      "name": "Exercise",
+      "priority": 3,
+      "duration": 1
+    },
+    {
+      "name": "Finish Project Report",
+      "priority": 4,
+      "duration": 3
+    }
+  ]
+}
