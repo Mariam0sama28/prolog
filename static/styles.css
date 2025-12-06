@@ -1,0 +1,138 @@
+:root {
+  --bg: #0f1724;
+  --card: #1d4cc4;
+  --muted: #9aa7b1;
+  --accent1: #7b61ff; /* دي الالوان الاساسية يا ايمان لو عايزة تغيري فيها */
+  --accent2: #08d1c5;
+  --glass: rgba(255, 255, 255, 0.04);
+  --radius: 14px;
+  --card-pad: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    #a6a8ac 0%,
+    #1057ad 100%
+  ); /*ودي بردو الالوان الاساسية */
+  color: #e6f0f3;
+}
+.container {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: 28px;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2)
+  ); /*  ايحثس في جوجل دوكس عن جزء var بيفرق في شكل الفرونت جامد*/
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.subtitle {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: var(--radius);
+  padding: var(--card-pad);
+  box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6); /* لو عايزة تعدلي  ارقام شادو البوكسات بس انا شايفاها كويسة*/
+}
+.form-card .row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.form-card input,
+.form-card select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--glass);
+  color: var(--muted);
+}
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  color: white;
+  box-shadow: 0 6px 18px rgba(11, 12, 40, 0.6);
+}
+.btn.gradient {
+  background: linear-gradient(90deg, var(--accent2), var(--accent1));
+  color: white;
+}
+.btn.danger {
+  background: rgba(255, 50, 50, 0.12);
+  color: #ff8b8b;
+}
+.tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tasks-list li {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+.tasks-list .meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+.msg {
+  margin-top: 8px;
+  color: #bfeee0;
+}
+.plan-card ol {
+  padding-left: 18px;
+}
+.actions-row {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+footer {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 12px;
+}
